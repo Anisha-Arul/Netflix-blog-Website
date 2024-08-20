@@ -1,0 +1,100 @@
+*{
+    padding:0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(5, 5, 5);
+}
+.row__poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 150px;
+    transition: transform 450ms;
+    margin-right: 10px;
+}
+.row__posters{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+}
+.row__poster:hover{
+    transform: scale(1.09);
+
+}
+.row__posters::-webkit-scrollbar{
+    display:none;
+}
+.row__posterlarge{
+    max-height: 400px;
+    color:aliceblue;
+    
+}
+.row{
+    color:aliceblue;
+    margin-left: 20px;
+}
+.banner{
+    background: url('squid.jpeg');
+    background-size: cover;
+    color:aliceblue;
+    object-fit: contain;
+    height: 450px;
+    
+    }
+    .banner__contents{
+        margin-left: 30px;
+        padding-top: 140px;
+        height: 190px;
+       
+    }
+    .banner__title{
+        font-size: 50px;
+        font-weight: 800;
+        padding: 14px;
+       
+    }
+ .banner__description{
+    width: 45rem;
+    line-height: 1.4;
+    padding-top: 1rem;
+    font-size: .8rem;
+    max-width: 350px;
+    height: 180px;
+}
+.banner__button{
+    color:aliceblue;
+    border-radius: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background-color:rgb(50, 50, 50,.5);
+    cursor: pointer;
+
+}
+.nav__logo{
+    width: 100px;
+    object-fit: contain;
+}
+.nav__avatar{
+    width: 30px;
+    object-fit: contain;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.baanner__fade{
+    background: linear-gradient(180deg,transparent, rgba(184, 183, 183, 0.6)#111);
+   height: 7.4rem;
+   
+}
